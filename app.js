@@ -16,7 +16,7 @@ const fromDollarToYen = function(valueInDollar){
 
 const fromYenToPound = function(valueInYen){
     let valueInPound = valueInYen * 0.00781861;
-    return valueInPound;
+    return valueInPound + valueInPound;
 }
 
 
