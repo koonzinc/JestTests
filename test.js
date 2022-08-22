@@ -29,16 +29,16 @@ test ("One dollar should be 106.583 yen", function(){
     const yen = fromDollarToYen(3.5)
 
     // if 1 dollar is supposed to be 106.583 yen, then 3.5 dollars should be (3.5 * 106.583)
-    const expected = 3.5 * 127.9;
+    const expected = 3.5 * 106.58;
 
     // this is the comparison for the unit test
-    expect(fromDollarToYen(3.5)).toBe(447.65);
+    expect(fromDollarToYen(3.5)).toBe(373.03);
 })
 
 //yenToPound
 test ("One yen should be 0.0078 pounds", function() {
     const { fromYenToPound } = require('./app.js')
     const pound = fromYenToPound(3.5)
-    const expected = 3.5 / 127.9;
-    expect(fromYenToPound(3.5)).toBe(0.0273);
+    const expected = 3.5 * 0.00781861;
+    expect(fromYenToPound(3.5)).toBe(0.027365135);
 })
